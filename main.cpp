@@ -11,7 +11,7 @@ int main(void){
 
 	cout << "Reading data from file..." << endl;
 	//Read data from csv file
-	ifstream file("../data/iris.csv");
+	ifstream file("iris.csv");
 	stringstream buffer;
 	buffer << file.rdbuf();
 	
@@ -21,7 +21,6 @@ int main(void){
 	
 	while(getline(buffer, token)){
 		lines.push_back(token);
-
 	}
 	
 	cout << "There are " << lines.size() << " of data" << endl;
@@ -65,7 +64,7 @@ int main(void){
 	pn.fit(X, y);
 
 
-	ifstream filevalidate("../data/iris-validasi.csv");
+	ifstream filevalidate("iris-validasi.csv");
 	stringstream buf;
 	buf << filevalidate.rdbuf();
 	
