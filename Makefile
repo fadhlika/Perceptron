@@ -1,5 +1,5 @@
-Perceptron: main.cpp Perceptron.cpp
-	clang++ main.cpp Perceptron.cpp -o Perceptron --std=c++11
+Perceptron.exe: main.cpp Perceptron.cpp
+	g++ main.cpp Perceptron.cpp -o Perceptron.exe -std=c++11
 
-run: Perceptron
-	./Perceptron
+run: Perceptron.exe
+	.\Perceptron.exe

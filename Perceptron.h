@@ -9,7 +9,8 @@ class Perceptron{
 
 	private:
 		double eta;
-		int iter;	
+		int iter;
+		double b;
 		std::vector<std::vector<double>> traindata;
 		std::vector<int> target;
 		std::vector<double> w;
